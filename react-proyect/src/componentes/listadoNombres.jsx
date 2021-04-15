@@ -30,10 +30,10 @@ const Lista =()=>{
     
    
     return(
-        <div>
+        <div className="p-3 mb-2 bg-dark">
             <div className="row">
                 <div className="col">
-                    <h2 className="text-center">Nueva tarea</h2>
+                    <h2 className="text-center text-white">Nueva tarea</h2>
                     <form onSubmit={(e)=>addTarea(e)} className="form-group text-center">
                         <input 
                             onChange={(e)=>{setTarea(e.target.value)}} 
@@ -57,7 +57,7 @@ const Lista =()=>{
                 </div>
                 
                 <div className="col">
-                    <h2 className="text-center">Listado de tareas</h2>
+                    <h2 className="text-center text-white">Listado de tareas</h2>
                         <ul className="list-group">
                             {
                                 lista.map(
