@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import uniqid from 'uniqid'
-
+import '../estilos/listadoNombres.css'
 
 
 const Lista =()=>{
@@ -13,6 +13,8 @@ const Lista =()=>{
         if (!tarea.trim()) {
             setError('El campo nombre esta vacio')
             return
+        }if(setTarea === tarea){
+            setError('Ya has creado esta tarea')
         }
         const nuevaTarea = {
             id:uniqid(),
